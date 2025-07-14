@@ -1,14 +1,6 @@
-from calendar import c
-import re
-from sys import displayhook
-from altair import selection
-from click import option
 import streamlit as st
 import pandas as pd
 import psycopg2
-import psycopg2.extras as extras
-#import sqlalchemy
-from sqlalchemy import column, create_engine
 import methods
 
 if "df_cand" not in st.session_state:
