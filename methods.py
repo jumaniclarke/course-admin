@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import psycopg2-binary as ps
+import psycopg2-binary as psy
 import psycopg2.extras as extras
 
 
@@ -11,7 +11,7 @@ cur = None
 
 @st.cache_resource
 def init_connection():
-    return ps.connect(**st.secrets["postgres"])
+    return psy.connect(**st.secrets["postgres"])
 # make a connection to the database
 conn1 = init_connection()
 
