@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import psycopg2-binary as psy
+import psycopg2 as psy
 import psycopg2.extras as extras
 
 
