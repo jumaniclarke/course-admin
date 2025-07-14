@@ -31,7 +31,7 @@ login_page = st.Page(login, title="Log in", icon=":material/login:")
 logout_page = st.Page(logout, title="Log out", icon=":material/logout:")
 
 dashboard = st.Page(
-    "course_admin_app.py", title="Dashboard", icon=":material/dashboard:", default=True
+    "run_admin_app.py", title="Dashboard", icon=":material/dashboard:", default=True
 )
 if st.user.is_logged_in:
     pg = st.navigation(
