@@ -10,7 +10,7 @@ def login():
 
     if not st.user.is_logged_in:
         if st.button("Login in with google"):
-            st.login("google",)
+            st.login("google")
             if st.user.is_logged_in:
                 st.success("Logged in successfully!")
                 st.rerun()
